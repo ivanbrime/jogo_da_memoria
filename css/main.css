@@ -1,0 +1,18 @@
+html {
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    overflow:hidden
+}
+body{
+
+    background-color: black;
+    color:white;
+    min-width: 100vmin;
+    max-width: 100vmin;
+    aspect-ratio: 1;
+    margin: 0px auto;
+    padding: 0px;
+}
+h1 {
+    background-color: ;
+}
