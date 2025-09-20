@@ -3,29 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jogo da memoria</title>
+    <title>Jogo da Memória</title>
     <link rel="stylesheet" href="../css/board.css">
     <link rel="stylesheet" href="../css/main.css">
 
-     <script src="../scripts/board.js" defer></script>
+    <script src="../scripts/board.js" defer></script>
     <script src="../scripts/card.js" defer></script>
     <script src="../scripts/main.js" defer></script>
 </head>
 <body>
+    <!-- Template para o Cartão -->
     <template id="cardTemplate">
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front"></div>
-                <div class="flip-card-back"><img src="">
+                <div class="flip-card-back">
+                    <img src="" alt="Imagem da carta">
+                </div>
             </div>
         </div>
     </template>
+
+    <!-- Tabuleiro (oculto até o jogo começar) -->
     <div id="board" class="hidden"></div>
+
+    <!-- Menu -->
     <div id="menu">
-        <h1>MEMORIA DO HEROI</h1>
+        <h1>MEMÓRIA DO HERÓI</h1>
         <div class="container">
-            <select name="numCards" id="numCards"></select>
-            <button id="start">start</button>
+            <label for="numCards">Escolha o número de cartas:</label>
+            <select name="numCards" id="numCards">
+                <option value="6">6</option>
+                <option value="12">12</option>
+                <option value="18">18 </option>
+                
+                <option value="24">24 </option>
+            </select>
+            <button id="start">Iniciar Jogo</button>
         </div>
     </div>
 </body>
